@@ -1,0 +1,19 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: my-task
+  namespace: pipelines-demo
+spec:
+  steps:
+    - name: my-step
+      image: registry.access.redhat.com/ubi8/ubi
+      envFrom:
+        - secretRef:
+            name: my-secret
+      command:
+        - sh
+        - -c
+      args:
+        - |
+          echo $ENV_VAR1
+          echo $ENV_VAR2
