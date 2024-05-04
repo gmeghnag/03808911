@@ -2,8 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- Namespace.yaml
-- Secret.yaml
-- Task.yaml
-- Pipeline.yaml
-- PipelineRun.yaml
+- 00_Namespace.yaml
+- 01_Secret.yaml
+- 02_Task.yaml
+- 03_Pipeline.yaml
+- 04_PipelineRun.yaml
