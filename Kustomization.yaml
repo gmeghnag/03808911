@@ -6,4 +6,3 @@ resources:
 - 01_Secret.yaml
 - 02_Task.yaml
 - 03_Pipeline.yaml
-- 04_PipelineRun.yaml
